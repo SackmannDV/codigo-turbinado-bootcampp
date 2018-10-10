@@ -17,4 +17,6 @@ cd Vista/hoteles && yarn start
 
 # Agradecimientos
 
-Martin Serrati[![Github]](https://github.com/msvzero)
+[Martin Serrati](https://github.com/msvzero)
+[Cristian Paniagua ](https://github.com/cristianpy)
+[GDGcde ](https://facebook.com/GDGcde)
