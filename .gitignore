@@ -1,0 +1,5 @@
+Vista/hoteles/node_modules/*
+API/node_modules/*
+
+
+npm-debug*.log*
