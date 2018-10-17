@@ -1,6 +1,6 @@
 // React && react-bootstrap
 import React, {Component} from "react";
-import {Grid, Row, Col, Well, Button} from "react-bootstrap";
+import {Grid, Row, Col, Well, Button, ButtonToolbar} from "react-bootstrap";
 import {LinkContainer} from "react-router-bootstrap"
 
 // react-confirm-alert === https://www.npmjs.com/package/react-confirm-alert
@@ -63,6 +63,18 @@ render() {
     return(
         <div>
             <Grid>
+                <Row className="title-grid">
+                    <Col sm={12} md={10}>
+                        <h1>Lista de Hoteles</h1>
+                    </Col>
+                    <Col sm={12} md={2}>
+                        <ButtonToolbar>
+                            <LinkContainer to="/hoteles/nuevo">
+                                <Button bsStyle="primary">Nuevo</Button>
+                            </LinkContainer>
+                        </ButtonToolbar>
+                    </Col>
+                </Row>
                 <Row className="show-grid">
                     {
                         this.state.hoteles.map((hotel, index) => {
