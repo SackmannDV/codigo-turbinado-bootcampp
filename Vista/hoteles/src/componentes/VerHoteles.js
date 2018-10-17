@@ -1,6 +1,7 @@
 // React && react-bootstrap
 import React, {Component} from "react";
-import {Grid, Row, Col, Well} from "react-bootstrap";
+import {Grid, Row, Col, Well, Button} from "react-bootstrap";
+import {LinkContainer} from "react-router-bootstrap"
 
 // react-confirm-alert === https://www.npmjs.com/package/react-confirm-alert
 import { confirmAlert } from 'react-confirm-alert'; 
@@ -74,6 +75,8 @@ render() {
                                     <p>{hotel.direccion}</p>
                                     <h4><small>{hotel.latitud} {hotel.longitud}</small></h4>
                                     <a onClick={() => modalDeleteAlert(this, hotel.id)}>Eliminar</a>
+                                    {' | '}
+                                    <LinkContainer to={`/hoteles/editar/${hotel.id}`}><a>Editar</a></LinkContainer>
                                 </Well> 
                                 </Col>
                             )

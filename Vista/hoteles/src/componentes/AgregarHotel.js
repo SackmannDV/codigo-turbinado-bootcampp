@@ -40,7 +40,8 @@ const writeDB = (clase, port = 3000) => {
             'Content-Type': 'application/json'
             },
             body: JSON.stringify(valores)
-        }).then(() => {
+        })
+        .then(() => {
             clase.props.history.push(`/hoteles/lista`);
         })
         .catch((error) => {
@@ -54,11 +55,11 @@ const writeDB = (clase, port = 3000) => {
 
 class AgregarHotel extends Component {
     state = {
-        nombre: "",
-        direccion: "",
-        latitud: "",
-        longitud: "",
-        imagenUrl: "",
+        nombre: '',
+        direccion: '',
+        latitud: '',
+        longitud: '',
+        imagenUrl: '',
         redirect: false
     }
 
@@ -81,7 +82,7 @@ class AgregarHotel extends Component {
 
     render(){
         if(this.state.redirect) {
-            return(<Redirect to="/hoteles/lista"/>)
+            return <Redirect to="/hoteles/lista"/>
         } else {        
             return(
                 <div>

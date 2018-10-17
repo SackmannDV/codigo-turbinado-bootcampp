@@ -18,8 +18,8 @@ const AppHTML = (
                     <Col md={12}>
                     <Route exact path="/" component={Home} />
                     <Route path="/hoteles/lista" component={VerHoteles} />
-                    <Route path="/hoteles/nuevo" Component={AgregarHotel} />
-                    <Route path="/hoteles/editar/:id" Component={AgregarHotel} />
+                    <Route path="/hoteles/nuevo" component={AgregarHotel} />
+                    <Route path="/hoteles/editar/:id" component={AgregarHotel} />
                     </Col>
                 </Row>
             </Grid>
